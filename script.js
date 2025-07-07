@@ -30,20 +30,3 @@ pop.addEventListener('touchstart', () => {
 pop.addEventListener('touchend', () => {
     pop.src = 'pop1.png';
 });
-
-pop.addEventListener('pointerdown', () => {
-    pop.src = 'pop2.png';
-    score++;
-    scoreDisplay.textContent = score;
-    
-    // เล่นเสียง
-    popSound.currentTime = 0; // รีเซ็ตเสียง
-    popSound.play().catch((error) => {
-        console.log('เสียงเล่นไม่ได้จนกว่าจะคลิกครั้งแรก', error);
-    });
-});
-
-pop.addEventListener('pointerup', () => {
-    pop.src = 'pop1.png';
-});
-
