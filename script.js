@@ -45,3 +45,23 @@ pop.addEventListener('pointerdown', () => {
 
 pop.addEventListener('pointerup', () => {
     pop.src = 'pop1.png';
+
+// ใช้ click event
+pop.addEventListener('click', () => {
+    // เปลี่ยนเป็นรูปปากอ้า
+    pop.src = 'pop2.png';
+    score++;
+    scoreDisplay.textContent = score;
+
+    // เล่นเสียง
+    popSound.currentTime = 0;
+    popSound.play().catch((error) => {
+        console.log('เสียงเล่นไม่ได้จนกว่าจะคลิกครั้งแรก', error);
+    });
+
+    // ตั้งเวลาให้เปลี่ยนกลับอัตโนมัติหลังคลิก
+    setTimeout(() => {
+        pop.src = 'pop1.png';
+    }, 150); // 0.15 วินาที
+});
+                     
