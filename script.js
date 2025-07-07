@@ -17,3 +17,16 @@ pop.addEventListener('mousedown', () => {
 pop.addEventListener('mouseup', () => {
     pop.src = 'pop1.png'; // รูปตอนปากปิด
 });
+
+// สำหรับมือถือ
+pop.addEventListener('touchstart', () => {
+    popcat.src = 'pop2.png';
+    score++;
+    scoreDisplay.textContent = score;
+    popSound.currentTime = 0;
+    popSound.play();
+});
+
+pop.addEventListener('touchend', () => {
+    pop.src = 'pop1.png';
+});
