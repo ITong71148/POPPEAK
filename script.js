@@ -45,3 +45,5 @@ pop.addEventListener('pointerdown', () => {
 
 pop.addEventListener('pointerup', () => {
     pop.src = 'pop1.png';
+});
+
