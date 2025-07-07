@@ -20,7 +20,7 @@ pop.addEventListener('mouseup', () => {
 
 // สำหรับมือถือ
 pop.addEventListener('touchstart', () => {
-    popcat.src = 'pop2.png';
+    pop.src = 'pop2.png';
     score++;
     scoreDisplay.textContent = score;
     popSound.currentTime = 0;
