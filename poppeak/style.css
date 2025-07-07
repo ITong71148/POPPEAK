@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    background-image: url('this-is-fine.jpeg');
+    background-size: cover; /* ให้ภาพเต็มหน้าจอ */
+}
+
+.container {
+    text-align: center;
+}
+
+#pop {
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+#score {
+    font-size: 300%;
+    text-align: center;
+    color: aqua;
+}
